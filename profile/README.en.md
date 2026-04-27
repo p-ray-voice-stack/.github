@@ -3,6 +3,7 @@
 **LANGUAGE:** [中文版](./README.md)
 
 > **P-Ray Voice Stack** is a GitHub organization focused on enterprise-grade voice systems and delivery engineering.  
+
 > Our priority is not to ship a one-off demo, but to turn voice-related capabilities into deliverable, deployable, maintainable, and commercially operable To-B systems.
 
 ## Positioning
@@ -23,6 +24,7 @@ If you are already familiar with systems engineering or joining delivery work, t
 - pay attention to how image publishing, host-side contracts, reverse proxy, and handoff documentation form a real delivery chain
 - treat this organization as a long-term commercial systems workspace rather than a single demo repository
 
+
 ## Organization Information
 
 - **Founding company:** **Suzhou Industrial Park Qiguang Artificial Intelligence Technology Co., Ltd.**
@@ -32,6 +34,7 @@ If you are already familiar with systems engineering or joining delivery work, t
 ## Contact And Follow-Up
 
 For technical collaboration or business coordination, please contact:
+
 
 - **Project co-founder:** Nini Fer
 - **Background:** Statistics, U.S. News 2024 Top 35 U.S. undergraduate program. ENFP. Primary work includes data analysis, brand building, and open-source community development.
