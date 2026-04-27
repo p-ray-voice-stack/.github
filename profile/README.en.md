@@ -3,102 +3,39 @@
 **LANGUAGE:** [中文版](./README.md)
 
 > **P-Ray Voice Stack** is a GitHub organization focused on enterprise-grade voice systems and delivery engineering.  
-> Our priority is not to ship a one-off demo, but to turn voice-related capabilities into deliverable, deployable, maintainable, and commercially operable systems.
+
+> Our priority is not to ship a one-off demo, but to turn voice-related capabilities into deliverable, deployable, maintainable, and commercially operable To-B systems.
 
 ## Positioning
 
-`p-ray-voice-stack` does not exist to host a single product repository or a loose collection of experiments.  
-It functions as a **commercial voice systems workspace** where open-source mainline work, website systems, image publishing, deployment contracts, operational handoff, and delivery boundaries are kept explicit instead of being mixed together.
+`P-Ray-Voice-Stack` is defined as a **commercial voice systems workspace**: it separates open-source mainline work, website systems, image publishing, deployment contracts, operational handoff, and delivery boundaries so each line can be reviewed and continued by the next contributor.
 
-We treat the following as first-order concerns:
+## Beginner And Advanced Paths
 
-- **business-facing system credibility comes from clear boundaries, not feature sprawl**
-- **infrastructure, publishing, and host contracts are part of product capability**
-- **there must be evidence between “deployable” and “deployed,” not just verbal status**
+If you are new to this organization, the recommended **beginner path** is:
 
-## What We Work On
+- start from this profile page to understand why we separate the open-source mainline, website systems, publishing chain, and delivery boundary
+- then move into `P-Ray-Voice-Stack` to understand the public protocol layer, runtime shape, and mainline systems work
+- if you need the website-facing view, continue with `pray-site-frontend` and `pray-site-backend`
 
-Current work across this organization is concentrated around:
+If you are already familiar with systems engineering or joining delivery work, the recommended **advanced path** is:
 
-- **architecture and runtime design for voice-related application systems**
-- **engineering of public website frontend, backend, and access layers**
-- **deployment contracts for containers, host environments, reverse proxy, and release paths**
-- **repository and responsibility layering across open-source mainline, website runtime, and commercial delivery lines**
+- focus on repository responsibility boundaries
+- pay attention to how image publishing, host-side contracts, reverse proxy, and handoff documentation form a real delivery chain
+- treat this organization as a long-term commercial systems workspace rather than a single demo repository
 
-If a system may eventually enter a customer environment or be handed across teams, “it runs on my machine” is not enough.  
-It should be able to explain:
-
-- why repositories are split this way
-- why images are published from a specific path
-- why a runtime depends on a specific host-side contract
-- which parts are public mainline and which parts belong to private delivery or operational boundaries
-
-## Repository Roles
-
-Repositories in this organization currently serve different roles:
-
-- **`P-Ray-Voice-Stack`**
-  - the open-source mainline repository
-  - public systems work, protocol shape, runtime boundaries, and long-term mainline implementation
-
-- **`pray-site-frontend`**
-  - the website frontend repository
-  - public presentation layer, content layer, and frontend experience responsibilities
-
-- **`pray-site-backend`**
-  - the website backend repository
-  - API, container image, host contract, and backend deployment responsibilities
-
-- **additional delivery- or environment-specific repositories**
-  - used when a runtime, customer environment, or delivery surface should remain separate from the public mainline
-
-This is not temporary structure. It is deliberate commercial layering:  
-**not every code path belongs in the same repository, and not every responsibility should share the same release line.**
-
-## What We Optimize For
-
-In business-facing voice systems, we optimize for the following more than superficial feature count:
-
-- **explicit contracts**
-  - containers, ports, domains, proxy rules, image tags, and environment variables should be explainable
-
-- **reproducible release**
-  - image paths, version identifiers, compose structure, and host contracts should remain stable
-
-- **handoff-ready operation**
-  - operational notes, deployment boundaries, and private handoff materials should support safe transfer of ownership
-
-- **clear public/private boundaries**
-  - open-source mainline, website runtime, and delivery runtime should not collapse into one mixed track
-
-- **narrow checkpoints**
-  - we prefer small, reviewable infrastructure and runtime checkpoints over “magic” one-shot deployment
-
-## Collaboration
-
-We welcome collaboration that is **careful, engineering-minded, and explainable**.  
-In this organization, strong contributions usually improve one or more of the following:
-
-- clearer repository boundaries
-- more reliable release paths
-- more reviewable runtime behavior
-- easier maintenance for website and delivery lines
-- more accurate documentation and handoff material
-
-If you are reading this page, the key point is not only what we build, but how we keep each system line understandable, reviewable, and safe to evolve in a commercial setting.
 
 ## Organization Information
 
-- **Organization:** `p-ray-voice-stack`
 - **Founding company:** **Suzhou Industrial Park Qiguang Artificial Intelligence Technology Co., Ltd.**
-- **Working English company name (provisional):** **P-ray AI Ltd.**
+- **English company name:** **P-ray AI Ltd.**
+- **Company profile:** Qiguang is an AI-native one-person company (OPC) focused on the long-term vision of AI hardware, cloud-edge collaboration, and embodied intelligence. The company also maintains an external technical advisor network with academic backgrounds including Yale EECS PhD, University of Toronto CS PhD, and Tsinghua EECS, providing stage-based technical guidance in system architecture, AI engineering, real-time voice systems, and open-source ecosystem work.
 
 ## Contact And Follow-Up
 
-For collaboration, technical coordination, or business-facing discussion, please prefer the relevant repository through:
+For technical collaboration or business coordination, please contact:
 
-- Issues
-- Pull Requests
-- documented repository-level communication channels where available
 
-For systems, deployment, and organizational structure, we strongly prefer communication that is **traceable, referenceable, and reviewable**.
+- **Project co-founder:** Nini Fer
+- **Background:** Statistics, U.S. News 2024 Top 35 U.S. undergraduate program. ENFP. Primary work includes data analysis, brand building, and open-source community development.
+- **Business contact email:** `jenniferzhang52@gmail.com`
