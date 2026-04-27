@@ -91,7 +91,7 @@ If you are reading this page, the key point is not only what we build, but how w
 
 - **Organization:** `p-ray-voice-stack`
 - **Founding company:** **Suzhou Industrial Park Qiguang Artificial Intelligence Technology Co., Ltd.**
-- **Working English company name (provisional):** **P-ray AI Ltd.**
+- **English company name:** **P-ray AI**
 
 ## Contact And Follow-Up
 
