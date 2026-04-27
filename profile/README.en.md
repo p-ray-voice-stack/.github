@@ -2,79 +2,90 @@
 
 **LANGUAGE:** [中文版](./README.md)
 
-> **P-Ray Voice Stack** is an organizational workspace centered on voice-related software systems.  
-> We treat research, system design, website engineering, deployment contracts, and runtime governance as one continuous engineering workflow rather than isolated stages.
+> **P-Ray Voice Stack** is a GitHub organization focused on enterprise-grade voice systems and delivery engineering.  
+> Our priority is not to ship a one-off demo, but to turn voice-related capabilities into deliverable, deployable, maintainable, and commercially operable systems.
 
-## Abstract
+## Positioning
 
-The purpose of `p-ray-voice-stack` as a GitHub organization is not to host a single repository or a single product line. Instead, it provides a stable structure for a set of related system efforts whose boundaries must remain explicit. Our current work spans applied AI, web systems, runtime hosts, image publishing pipelines, deployment governance, and operational handoff documentation.
+`p-ray-voice-stack` does not exist to host a single product repository or a loose collection of experiments.  
+It functions as a **commercial voice systems workspace** where open-source mainline work, website systems, image publishing, deployment contracts, operational handoff, and delivery boundaries are kept explicit instead of being mixed together.
 
-We make one principle especially clear: **infrastructure is not an afterthought; it is part of system design.**  
-For that reason, image publishing, host contracts, deployment boundaries, repository layering, and operational handoff notes are documented deliberately and reviewed as first-class engineering artifacts.
+We treat the following as first-order concerns:
 
-## Research And System Scope
+- **business-facing system credibility comes from clear boundaries, not feature sprawl**
+- **infrastructure, publishing, and host contracts are part of product capability**
+- **there must be evidence between “deployable” and “deployed,” not just verbal status**
 
-Our current work focuses on:
+## What We Work On
 
-- **architecture and runtime design for voice-related software systems**
+Current work across this organization is concentrated around:
+
+- **architecture and runtime design for voice-related application systems**
 - **engineering of public website frontend, backend, and access layers**
-- **container, host, and release contracts for reproducible deployment**
-- **repository governance across open-source mainline, website runtime, and delivery runtime layers**
+- **deployment contracts for containers, host environments, reverse proxy, and release paths**
+- **repository and responsibility layering across open-source mainline, website runtime, and commercial delivery lines**
 
-We place a high value on system legibility.  
-A repository should be able to explain why it exists. A deployment line should make its ownership clear. An image path should be justified. A host contract should be explicit. These answers should come from documentation rather than oral memory.
+If a system may eventually enter a customer environment or be handed across teams, “it runs on my machine” is not enough.  
+It should be able to explain:
 
-## Repository Structure
+- why repositories are split this way
+- why images are published from a specific path
+- why a runtime depends on a specific host-side contract
+- which parts are public mainline and which parts belong to private delivery or operational boundaries
 
-Repositories in this organization currently serve distinct roles:
+## Repository Roles
+
+Repositories in this organization currently serve different roles:
 
 - **`P-Ray-Voice-Stack`**
   - the open-source mainline repository
-  - broader public systems work, research direction, and mainline implementation
+  - public systems work, protocol shape, runtime boundaries, and long-term mainline implementation
 
 - **`pray-site-frontend`**
-  - the public website frontend repository
-  - focused on the public-facing presentation and frontend experience layer
+  - the website frontend repository
+  - public presentation layer, content layer, and frontend experience responsibilities
 
 - **`pray-site-backend`**
-  - the public website backend repository
-  - focused on API, backend runtime, and backend deployment line responsibilities
+  - the website backend repository
+  - API, container image, host contract, and backend deployment responsibilities
 
 - **additional delivery- or environment-specific repositories**
-  - used when a runtime, delivery environment, or deployment concern should remain distinct from the public mainline
+  - used when a runtime, customer environment, or delivery surface should remain separate from the public mainline
 
-This structure is intentional rather than temporary:  
-**not every code path belongs in the same repository, and not every runtime responsibility should share the same deployment line.**
+This is not temporary structure. It is deliberate commercial layering:  
+**not every code path belongs in the same repository, and not every responsibility should share the same release line.**
 
-## Method And Style
+## What We Optimize For
 
-We prefer:
+In business-facing voice systems, we optimize for the following more than superficial feature count:
 
-- **explicit contracts over hidden environment drift**
-- **immutable release identifiers over ambiguous runtime state**
-- **narrow, reviewable infrastructure checkpoints over one-step “magic” deployment**
-- **clear repository and runtime boundaries**
-- **handoff documentation that supports long-term maintainability instead of personal memory**
+- **explicit contracts**
+  - containers, ports, domains, proxy rules, image tags, and environment variables should be explainable
 
-In practice, this means we care about:
+- **reproducible release**
+  - image paths, version identifiers, compose structure, and host contracts should remain stable
 
-- image repository paths and tag rules
-- nginx and host-side port contracts
-- the separation of roles between organization profile, repository governance docs, and private operational notes
-- evidence-based transitions between “deployable” and “deployed”
+- **handoff-ready operation**
+  - operational notes, deployment boundaries, and private handoff materials should support safe transfer of ownership
+
+- **clear public/private boundaries**
+  - open-source mainline, website runtime, and delivery runtime should not collapse into one mixed track
+
+- **narrow checkpoints**
+  - we prefer small, reviewable infrastructure and runtime checkpoints over “magic” one-shot deployment
 
 ## Collaboration
 
-We welcome collaboration that is **careful, systems-minded, and explainable**.  
-Within this organization, valuable contributions often improve one or more of the following:
+We welcome collaboration that is **careful, engineering-minded, and explainable**.  
+In this organization, strong contributions usually improve one or more of the following:
 
-- repository boundary clarity
-- deployment reproducibility
-- runtime reliability
-- maintainability of website-facing systems
-- accuracy and continuity of documentation and operational handoff material
+- clearer repository boundaries
+- more reliable release paths
+- more reviewable runtime behavior
+- easier maintenance for website and delivery lines
+- more accurate documentation and handoff material
 
-If you are reading this page, the most important point is not simply what we build, but how we want it to remain understandable, reviewable, and safely handoff-ready over time.
+If you are reading this page, the key point is not only what we build, but how we keep each system line understandable, reviewable, and safe to evolve in a commercial setting.
 
 ## Organization Information
 
@@ -84,7 +95,7 @@ If you are reading this page, the most important point is not simply what we bui
 
 ## Contact And Follow-Up
 
-For collaboration or technical coordination, please prefer the relevant repository:
+For collaboration, technical coordination, or business-facing discussion, please prefer the relevant repository through:
 
 - Issues
 - Pull Requests
