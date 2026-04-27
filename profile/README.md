@@ -1,56 +1,94 @@
 # P-Ray Voice Stack
 
-## Abstract
+**LANGUAGE:** [English Version](./README.en.md)
 
-P-Ray Voice Stack is an organizational workspace for building, studying, and operationalizing voice-centered software systems. Our work sits at the intersection of applied AI, web systems, product infrastructure, and deployment engineering. The repositories under this organization are structured to separate public open-source research and runtime experiments from website-facing services, delivery environments, and operational deployment lines.
+> **P-Ray Voice Stack** 是一个以语音相关软件系统为核心的问题域组织。  
+> 我们将研究、系统设计、网站工程、部署契约与运行时治理视为同一条连续的工程工作流，而不是彼此割裂的阶段。
 
-This GitHub organization is maintained as a systems-oriented research and engineering surface rather than a single monolithic product repository. We use repository boundaries to preserve clarity around scope, deployment ownership, and public versus private runtime responsibilities.
+## 摘要
 
-## Research And System Scope
+`p-ray-voice-stack` 作为 GitHub 组织存在的目的，并不是承载单一仓库或单一产品线，而是为一组相互关联、但边界必须清晰的系统工作提供稳定结构。我们当前的工作横跨应用型人工智能、网站前后端系统、运行时宿主环境、镜像发布链路，以及部署治理与交接文档体系。
 
-Our current work focuses on:
+我们特别强调一件事：**基础设施不是附属品，而是系统设计的一部分。**  
+因此，镜像发布、宿主机契约、部署边界、仓库分层和运维 handoff 都会被明确记录、审查与约束。
 
-- voice-related application architecture and runtime design
-- public-facing web properties and supporting backend services
-- deployment contracts for reproducible host and container runtime environments
-- repository governance for keeping open-source, website, and delivery layers clearly separated
+## 研究与系统范围
 
-We treat infrastructure decisions as part of system design. Image publishing, rollout boundaries, host contracts, and repository governance are documented deliberately so that engineering work remains understandable, reproducible, and reviewable.
+当前组织内的主要工作集中在以下方向：
 
-## Repository Map
+- **语音相关应用系统的架构与运行时设计**
+- **官网前端、官网后端与公共访问入口的工程化建设**
+- **面向可复现部署的容器、宿主机与发布契约**
+- **开源主线、官网运行线、交付运行线之间的仓库治理**
 
-The organization currently includes repositories that fall into several roles:
+我们倾向于把“系统可解释性”放在很高的位置。  
+一个仓库为什么存在、一条部署线归谁负责、一个镜像为什么从这个路径发布、一个服务为什么必须保持这个宿主 contract，这些问题都应当能被文档回答，而不依赖口头记忆。
 
-- `P-Ray-Voice-Stack`
-  - the open-source mainline and broader public systems work
-- `pray-site-frontend`
-  - the public website frontend repository
-- `pray-site-backend`
-  - the website backend and API deployment line
-- additional delivery or environment-specific repositories
-  - used when a runtime, delivery, or deployment concern should remain operationally distinct from the public mainline
+## 仓库结构
 
-This structure is intentional. Not every repository serves the same audience, and not every system concern should live in the same codebase.
+当前组织下的仓库大致承担以下不同角色：
 
-## Working Style
+- **`P-Ray-Voice-Stack`**
+  - 开源主线仓库
+  - 承载更广义的公共系统工作、研究脉络与主线实现
 
-We prefer:
+- **`pray-site-frontend`**
+  - 官网前端仓库
+  - 面向公开网站展示层与前端体验层
 
-- explicit deployment contracts over ad hoc server drift
-- immutable release identifiers over ambiguous runtime state
-- narrow, reviewable infrastructure checkpoints over one-step “magic” deployment
-- clear separation between development, website runtime, and delivery responsibilities
+- **`pray-site-backend`**
+  - 官网后端仓库
+  - 面向网站 API、后台运行逻辑与后端部署线
 
-## Collaboration
+- **其他交付或环境特定仓库**
+  - 当某个运行时、交付环境或部署面不应与开源主线混放时，会保持独立仓库边界
 
-We welcome careful, systems-minded collaboration. The best contributions to this organization usually improve one or more of the following:
+这套结构并非临时组织方式，而是一种有意识的分层：  
+**不是所有代码都应该进入同一仓库，也不是所有运行时责任都应该共享同一条部署线。**
 
-- clarity of repository boundaries
-- runtime reliability
-- deployment reproducibility
-- maintainability of website-facing systems
-- readability of technical documentation and operational handoff notes
+## 方法与风格
 
-## Contact
+我们偏好以下工程方法：
 
-For collaboration or technical coordination, please use the relevant repository issues, pull requests, or organization-linked contact channels when available.
+- **用明确契约替代隐性环境漂移**
+- **用不可变版本标识替代模糊运行状态**
+- **用狭窄、可回顾的基础设施检查点替代“一步到位”的黑箱部署**
+- **用仓库边界与运行边界保证系统职责清晰**
+- **用 handoff 文档维持长期可维护性，而不是依赖个人记忆**
+
+在实践层面，这意味着我们会认真对待：
+
+- 镜像仓库路径与 tag 规则
+- nginx 与宿主机端口契约
+- 组织 profile、仓库治理文档与私有运维文档之间的角色分工
+- 从“可部署”到“已部署”之间每一步的证据链
+
+## 协作
+
+我们欢迎**谨慎、系统化、可解释**的协作方式。  
+在这个组织里，好的贡献通常会改善以下一个或多个方面：
+
+- 仓库边界更清晰
+- 部署链路更可复现
+- 运行时更稳定
+- 官网相关系统更易维护
+- 文档与交接材料更准确、更可长期接续
+
+如果你正在阅读这个首页，最重要的一点不是“我们做了多少”，而是：  
+**我们希望每一条系统线索都能被后来者理解、复核，并在必要时安全接手。**
+
+## 组织信息
+
+- **组织名称：** `p-ray-voice-stack`
+- **创始公司：** **苏州工业园区祈光人工智能科技有限公司**
+- **英文名称（暂定）：** **P-ray AI Ltd.**
+
+## 联系与后续
+
+如需协作、交流或技术对接，请优先通过相关仓库的：
+
+- Issues
+- Pull Requests
+- 仓库内文档或约定的联络渠道
+
+对于系统、部署与组织结构本身，我们更偏好**可留痕、可引用、可复核**的沟通方式。
