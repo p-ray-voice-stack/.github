@@ -1,0 +1,36 @@
+name: Profile checks
+
+on:
+  pull_request:
+    paths:
+      - "profile/**"
+      - ".github/workflows/profile-checks.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "profile/**"
+      - ".github/workflows/profile-checks.yml"
+
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check required profile files
+        run: |
+          test -f profile/README.md
+          test -f profile/README.en.md
+          test -f profile/ninifer_zhang.jpg
+
+      - name: Check Ninifer image markup
+        run: |
+          grep -q 'src="./ninifer_zhang.jpg"' profile/README.md
+          grep -q 'src="./ninifer_zhang.jpg"' profile/README.en.md
+          grep -q 'align="center"' profile/README.md
+          grep -q 'align="center"' profile/README.en.md
+          grep -q 'width="50%"' profile/README.md
+          grep -q 'width="50%"' profile/README.en.md
