@@ -37,7 +37,9 @@
 
 - **Founding company:** **Suzhou Industrial Park Qiguang Artificial Intelligence Technology Co., Ltd.**
 - **English name:** **P-ray AI Ltd.**
-- **Company profile:** Qiguang is an AI-native one-person company (OPC) focused on the long-term vision of AI hardware, cloud-edge collaboration, and embodied intelligence. The company also maintains an external technical advisor network with academic backgrounds including Yale EECS PhD, University of Toronto CS PhD, and Tsinghua EECS, providing stage-based technical guidance in system architecture, AI engineering, real-time voice systems, and open-source ecosystem work.
+- **Company profile:** Qiguang is an AI-native one-person company (OPC) focused on the long-term vision of AI hardware, cloud-edge collaboration, and embodied intelligence.<br>
+The company also maintains an external technical advisor network with academic backgrounds including `Yale EECS PhD, University of Toronto CS PhD, and Tsinghua EECS`, providing stage-based technical guidance in system architecture, AI engineering, real-time voice systems, and open-source ecosystem work.
+
 
 
 
@@ -47,6 +49,8 @@
 ## Business Contact
 
 
-- **Project co-founder:** Nini Fer
-- **Background:** Statistics at a U.S. News 2024 Top 35 U.S. undergraduate program. ENFP. Primary work includes data analysis, brand building, and open-source community development.
+- **Project co-founder:** Jennifer Zhang
+- **Background:** Statistics Senior from UW-Madison. Primary work includes data analysis, brand building, and open-source community development.
 - **Business contact email:** `jenniferzhang52@gmail.com`
+
+![ninifer_zhang](./ninifer_zhang.jpg)
