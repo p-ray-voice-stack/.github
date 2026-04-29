@@ -53,4 +53,4 @@ The company also maintains an external technical advisor network with academic b
 - **Background:** Statistics Senior from UW-Madison. Primary work includes data analysis, brand building, and open-source community development.
 - **Business contact email:** `jenniferzhang52@gmail.com`
 
-![ninifer_zhang](./ninifer_zhang.jpg)
+<img src="./ninifer_zhang.jpg" alt="ninifer_zhang" width="50%">

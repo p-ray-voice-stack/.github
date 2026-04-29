@@ -55,4 +55,4 @@
 - **个人简介：** 美本 Top 35（U.S. News 2024）统计学的大四学生，ENFP 快乐小狗。主职：数据分析、品牌创建与开源社区建设。
 - **商务合作邮箱：** `jenniferzhang52@gmail.com`
 
-![ninifer_zhang](./ninifer_zhang.jpg)
+<img src="./ninifer_zhang.jpg" alt="ninifer_zhang" width="50%">
